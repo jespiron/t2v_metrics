@@ -8,7 +8,8 @@ from .vqa_model import VQAScoreModel
 from .lavis.models import load_model
 from ...constants import HF_CACHE_DIR
 
-default_question_template = 'Question: Does this figure show "{}"? Please answer yes or no.'
+#default_question_template = 'Question: Does this figure show "{}"? Please answer yes or no.'
+default_question_template = 'Question: Is the figure on the left the same as the figure on the right, given that both depict "{}"? Please answer yes or no.'
 default_answer_template = "yes" # instruct-blip uses "yes" instead of "Yes"
 
 InstructBLIP_MODELS = {
